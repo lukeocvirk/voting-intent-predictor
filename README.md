@@ -1,4 +1,4 @@
-# Vote Intent Predictor
+# Voting Intent Predictor
 This project encompasses a model used to predict voting patterns for Canadian federal elections based on demographic data.
 
 # How to train the model:
