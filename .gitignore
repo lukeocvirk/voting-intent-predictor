@@ -1,1 +1,8 @@
 .DS_Store
+canadian_vote_intention_dataset
+canadian_vote_intention_dataset.zip
+refined_data/RefinedVoteIntentionsDatabase.csv
+refined_data/VoteIntentionsDatabase.csv
+.venv/
+model/baseline.joblib
+model/baseline_bundle.joblib
