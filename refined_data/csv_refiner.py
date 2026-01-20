@@ -27,6 +27,12 @@ with open(input_file, newline="", encoding="utf-8") as infile, \
         if int(row["year"]) <= 1999:
             continue
 
+        if row["vote_intention"] in ["4", "5", "7", "9", "10", "95", "96", "97", "98", "99"]:
+            continue
+
+        if row["vote_intention"] == "8":
+            row["vote_intention"] = "2"
+
         if any(row[field].strip() == "" for field in FIELDS):
             continue
 
