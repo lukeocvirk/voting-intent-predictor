@@ -1,7 +1,7 @@
 # Voting Intent Predictor
 This project encompasses a model used to predict voting patterns for Canadian federal elections based on demographic data.
 
-# How to train the model:
+# Training the Model
 The data for this project was accessed at:
 https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/2EUFYD
 
@@ -14,6 +14,7 @@ Next, run these commands to train the model (it will take some time):
 `cd ../model`
 `python3 model.py`
 
+# Testing the Model
 Next, you can sample the model based on any set of attributes you want to include. This script generates N (recommend 100) synthetic voters based on your criteria which is converted into an estimated % chance of voting for a particular party based on your given attributes.
 
 The attributes included in the model's training data are: year (2023 is recommended; otherwise undefined behaviour), region, province, gender, age_cats, degree, language. For a breakdown of these attributes and what their possible values are, read the codebook in `canadian_vote_intention_dataset/VoteIntentionDatabase/Document/Vote_Intention_Codebook_and_TD.pdf`.
